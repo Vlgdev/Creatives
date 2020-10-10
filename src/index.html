@@ -10,7 +10,7 @@
     <title>Creative Digital Agancies</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="home">
       <div class="header__head">
         <div class="container">
           <div class="header__inner">
@@ -20,36 +20,33 @@
             <nav class="header__nav">
               <ul class="menu">
                 <li class="menu__item">
-                  <a class="menu__item-link" href="#">Home</a>
+                  <a class="menu__item-link" href="#" data-target="#home">Home</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__item-link" href="#">Pages</a>
+                  <a class="menu__item-link" href="#" data-target="#features">Features</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__item-link" href="#">Features</a>
+                  <a class="menu__item-link" href="#" data-target="#blog">Blog</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__item-link" href="#">Extensions</a>
+                  <a class="menu__item-link" href="#" data-target="#team">Our team</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__item-link" href="#">Tutorials</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__item-link" href="#">Contact us</a>
+                  <a class="menu__item-link" href="#" data-target="#contact">Contact us</a>
                 </li>
               </ul>
             </nav>
-            <div class="messangers">
-              <a href="#" class="messanger">
+            <div class="messengers">
+              <a href="#" class="messenger">
                 <span class="icon-facebook"></span>
               </a>
-              <a href="#" class="messanger">
+              <a href="#" class="messenger">
                 <span class="icon-twitter"></span>
               </a>
-              <a href="#" class="messanger">
+              <a href="#" class="messenger">
                 <span class="icon-skype"></span>
               </a>
-              <a href="#" class="messanger">
+              <a href="#" class="messenger">
                 <span class="icon-linkedin2"></span>
               </a>
             </div>
@@ -62,14 +59,14 @@
           <div class="header__descr">Power by Vigdev</div>
           <div class="header__scroll">
             <span class="header__scroll-text"> Scroll Down </span>
-            <button class="header__scroll-btn">
+            <button class="header__scroll-btn" data-target="#features">
               <span class="icon-cheveron-down"></span>
             </button>
           </div>
         </div>
       </div>
     </header>
-    <section class="features">
+    <section class="features" id="features">
       <div class="container">
         <h2 class="section-title features__title">We Are An Awesome Agency</h2>
         <div class="features__inner">
@@ -168,7 +165,7 @@
         <img src="news-2.jpg" alt="News" />
       </div>
     </section>
-    <section class="blog">
+    <section class="blog" id="blog">
       <div class="container">
         <h2 class="section-title blog__title">
           Let's blog
@@ -276,7 +273,7 @@
         </div>
       </div>
     </section>
-    <section class="team">
+    <section class="team" id="team">
       <div class="container">
       <h2 class="section-title team__title">
         Our Team
@@ -340,7 +337,7 @@
       </div>
     </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="container">
         <h2 class="section-title contact__title">
           We’d love to hear about your project. 
@@ -371,5 +368,6 @@
         </div>
       </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </body>
 </html>

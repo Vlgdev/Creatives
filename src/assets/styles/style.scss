@@ -9,9 +9,26 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding-top: 120px;
   padding-bottom: 300px;
   &__head {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     border-bottom: 1px solid rgba(#fff, 0.4);
+    transition: all .3s ease;
+    &--fixed {
+      position: fixed;
+      background: #222222;
+      z-index: 10;
+      .header__inner {
+        height: 80px;
+      }
+      .logo img {
+        width: 60px;
+      }
+    }
   }
   &__inner {
     display: flex;
@@ -76,10 +93,13 @@
   display: flex;
 }
 
-.messanger {
+.messenger {
   font-size: 20px;
   & + & {
     margin-left: 20px;
+  }
+  &:hover {
+    animation: messenger 0.4s ease;
   }
 }
 
@@ -155,6 +175,10 @@
       align-items: center;
       font-size: 38px;
       margin: 0 auto 15px;
+      transition: background 0.2s ease;
+      &:hover {
+        background: $activeBlue;
+      }
     }
     &-title {
       text-transform: uppercase;
@@ -271,6 +295,15 @@
     text-align: center;
     &-img {
       margin-bottom: 35px;
+      width: 270px;
+      height: 280px;
+      overflow: hidden;
+      img {
+        transition: transform 0.3s ease;
+      }
+      &:hover img {
+        transform: scale(1.05);
+      }
     }
     &-title {
       font-size: 18px;
@@ -398,6 +431,9 @@
         min-width: 100%;
       }
     }
+    &-img:hover + &-content {
+      transform: translateY(-10px);
+    }
     &-content {
       width: 217px;
       padding: 15px 10px;
@@ -405,6 +441,7 @@
       position: relative;
       z-index: 2;
       margin: -50px auto 0;
+      transition: transform 0.3s ease;
     }
     &-name {
       font-size: 20px;
@@ -465,6 +502,10 @@
       font-weight: 500;
       padding: 0.8em 2em;
       background: $blue;
+      transition: background 0.2s ease;
+      &:hover {
+        background: $activeBlue;
+      }
     }
   }
 }
@@ -490,4 +531,5 @@
   }
 }
 
+@import './anims';
 @import './media';
