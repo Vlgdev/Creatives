@@ -44,7 +44,8 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.8.7",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.1",
+    "jquery-mask-plugin": "^1.14.16",
     "normalize.css": "^8.0.1"
   }
 }

@@ -15,3 +15,25 @@
         transform: rotate(0);
     }
 }
+
+@keyframes showAlert {
+    0% {
+        transform: translate(-50%, -101%);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(-50%, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes hideAlert {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+    100% {
+        transform: translate(-50%, -101%);
+        opacity: 0;
+    }
+}
